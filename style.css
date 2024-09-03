@@ -22,8 +22,9 @@ body {
 }
 
 #logo {
-    width: 70%;
+    width: 60%;
     margin-inline: auto;
+    margin-bottom: 1rem;
 }
 
 .form-container {
@@ -93,7 +94,7 @@ body {
     border-color: var(--clr-btn-primary);
     background-color: var(--clr-btn-primary);
     color: #ffffff;
-    max-width: 60%;
+    max-width: 65%;
     margin-inline: auto;
     font-weight: bold;
 }
