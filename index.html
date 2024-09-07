@@ -5,7 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login Page | Facebook (Clone)</title>
+	<!-- Linking the stylesheet -->
 	<link rel="stylesheet" href="style.css">
+	<!-- Linking the JS -->
+	<script src="script.js"></script>
+	<!-- Linking the icons from boxicons as fonts -->
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -13,8 +19,14 @@
 		<img src="fb-logo.png" alt="Facebook Logo" id="logo">
 		<form action="#" id="login-form">
 			<p>Log in to Facebook</p>
-			<input type="text" placeholder="Email id or Phone Number">
-			<input type="text" placeholder="Password">
+			<div class="input-box">
+				<input type="text" placeholder="Email id or Phone Number" id="user-name">
+			</div>
+			<div class="input-box">
+				<input type="password" placeholder="Password" id="user-pass">
+				<i class='bx bxs-lock' onclick="showHidePass();" id="pass-hide-icon"></i>
+				<i class='bx bxs-lock-open' onclick="showHidePass();" id="pass-show-icon"></i>
+			</div>
 			<button id="login-btn">Log in</button>
 			<a href="#">Forgotten account?</a>
 			<hr>

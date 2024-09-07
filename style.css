@@ -49,7 +49,29 @@ body {
     font-size: 1.2rem;
 }
 
-#login-form input,
+.input-box {
+    width: 100%;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 0.7rem;
+    transform: translate(0, -50%);
+    font-size: 1.2rem;
+    color: rgb(170, 170, 170);
+}
+
+.input-box i[id='pass-show-icon'] {
+    display: none;
+}
+
+.input-box input,
 #login-btn,
 #create-new-acc-btn {
     margin-block: 10px;
@@ -58,6 +80,10 @@ body {
     border-radius: 8px;
     outline: none;
     border: 1px solid rgb(200, 200, 200);
+}
+
+.input-box input[type="password"] {
+    padding-right: 2.2rem;
 }
 
 #login-form input::placeholder {
